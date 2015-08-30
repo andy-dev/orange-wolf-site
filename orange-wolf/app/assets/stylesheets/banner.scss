@@ -1,0 +1,14 @@
+.matrix-box {
+  position: relative;
+  height: 800px;
+  background-repeat: no-repeat;
+
+  background: {
+   image: url(/assets/matrix_background.png);
+   size: 1280px 600px;
+   /*another option is:*/
+   /*size: 100% 100%;*/
+   position: top-center;
+  }
+
+}
