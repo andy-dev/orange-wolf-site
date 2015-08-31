@@ -33,6 +33,22 @@
     text-align: center;
     margin-top: -5px;
   }
+}
+
+.quote-box {
+  height: 150px;
+  width: 100%;
+  /*background: transparentize(black, 0.2);*/
+  position: absolute;
+  top: 50%;
+  margin-top: -600px;
+
+  h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+  }
 
 }
 
