@@ -4,6 +4,7 @@ $(function(){
   myModule();
   showEverywhere("I love JS!!");
   console.log(player.weapons);
+  mybouncingSquare();
 })
 //-------------------
 // event bubbling
@@ -125,79 +126,80 @@ player.addWeapon("samurai sword")
 //---------------------------
 //  Canvas
 //---------------------------
+var mybouncingSquare = function() {
 
-// // initial position
-// var x = 10;
-// var y = 10;
-// // rectangle dimension
-// var w = 20;
-// var h = 30;
-// // speed of our rect
-// var speed = 2;
-// var speedY = 1;
-// var blueZone, orangeZone
+  // initial position
+  var x = 10;
+  var y = 10;
+  // rectangle dimension
+  var w = 20;
+  var h = 30;
+  // speed of our rect
+  var speed = 2;
+  var speedY = 1;
+  var blueZone, orangeZone
 
-// var canvas = document.getElementById("canvasOne");
-// var ctx = canvas.getContext("2d");
+  var canvas = document.getElementById("canvasOne");
+  var ctx = canvas.getContext("2d");
 
-// var update = function() {
-//   var crossedRightLimit = x >= 180;
-//   var crossedLeftLimit = x <= 10;
-//   var crossedBottomLimit = y >= 170;
-//   var crossedUpperLimit = y <= 10;
+  var update = function() {
+    var crossedRightLimit = x >= 180;
+    var crossedLeftLimit = x <= 10;
+    var crossedBottomLimit = y >= 170;
+    var crossedUpperLimit = y <= 10;
 
-//   if(crossedRightLimit){
-//     x = 170;
-//     speed = -speed;
-//   }
+    if(crossedRightLimit){
+      x = 170;
+      speed = -speed;
+    }
 
-//   else if(crossedLeftLimit) {
-//     x = 10;
-//     speed = -speed;
-//   }
+    else if(crossedLeftLimit) {
+      x = 10;
+      speed = -speed;
+    }
 
-//   if(crossedBottomLimit){
-//     y = 170;
-//     speedY = -speedY;
-//   }
+    if(crossedBottomLimit){
+      y = 170;
+      speedY = -speedY;
+    }
 
-//   else if(crossedUpperLimit) {
-//     y = 10;
-//     speedY = -speedY;
-//   }
+    else if(crossedUpperLimit) {
+      y = 10;
+      speedY = -speedY;
+    }
 
-//   y = y + speedY;
-//   x = x + speed;
+    y = y + speedY;
+    x = x + speed;
 
-//   blueZone = x > 0 && x < 65;
-//   orangeZone = !blueZone && x < 130;
-// }
+    blueZone = x > 0 && x < 65;
+    orangeZone = !blueZone && x < 130;
+  }
 
-// var draw = function(){
-//   ctx.clearRect(0,0, 200, 200)
+  var draw = function(){
+    ctx.clearRect(0,0, 200, 200)
 
-//   if(blueZone){
-//     ctx.fillStyle = "#3333FF"
-//   }
-//   else if(orangeZone) {
-//     ctx.fillStyle = "orange"
-//   }
-//   else {
-//     ctx.fillStyle = "rgb(200,0,100)"
-//   }
+    if(blueZone){
+      ctx.fillStyle = "#3333FF"
+    }
+    else if(orangeZone) {
+      ctx.fillStyle = "orange"
+    }
+    else {
+      ctx.fillStyle = "rgb(200,0,100)"
+    }
 
-//   ctx.fillRect(x,y,w,h)
-// }
+    ctx.fillRect(x,y,w,h)
+  }
 
-// var step = function (){
-//   update();
-//   draw();
-//   window.requestAnimationFrame(step);
-// }
+  var step = function (){
+    update();
+    draw();
+    window.requestAnimationFrame(step);
+  }
 
-// step();
+  step();
 
-
+}
 
 //---------------------------
 //  Simple unit test
