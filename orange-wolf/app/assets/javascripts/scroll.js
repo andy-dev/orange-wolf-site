@@ -9,27 +9,21 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll + '%)'
   });
 
-   if(wScroll > $('.projects').offset().top - ($(window).height() / 1.2)) {
-
+  if(wScroll > $('.projects').offset().top - ($(window).height() / 1.2)) {
     $('.projects figure').each(function(i){
-
       setTimeout(function(){
         $('.projects figure').eq(i).addClass('is-showing');
       }, (700 * (Math.exp(i * 0.14))) - 700);
     });
-
   }
 });
 
 
 
-
-// $(function(){
-
-//   $('#masonry-container').masonry({
-//     itemSelector: '.box',
-//     columnWidth: 100,
-//     gutterWidth: 40
-//   });
-
-// });
+$(function(){
+  $('#masonry-container').masonry({
+    itemSelector: '.box',
+    columnWidth: 100,
+    isFitWidth: true
+  });
+});
