@@ -1,0 +1,231 @@
+.my-container{
+  margin-top:100px;
+  margin-left: 20px;
+}
+
+/*-----------------------*/
+/*     Event Bubbling    */
+/*-----------------------*/
+
+#evt-bubble-div {
+  float:left;
+  margin-bottom: 10px;
+}
+
+#no-bubble-div {
+  float:left;
+  margin-left: 10px;
+}
+
+.evt-bubble-style-divs {
+  margin-right: 10px;
+  display: table-cell;
+  border: solid 1px black;
+  text-align: center;
+  padding: 20px;
+}
+
+.no-bubble-style-divs {
+  display: table-cell;
+  border: solid 1px black;
+  text-align: center;
+  padding: 20px;
+}
+
+/*-----------------------*/
+/*      HandleBars       */
+/*-----------------------*/
+
+#handle-bars-render-div {
+  float:left;
+  width: 250px;
+  margin-left: 10px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+/*-----------------------*/
+/*     Selectors         */
+/*-----------------------*/
+
+#selector-play-div {
+  clear:left;
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  border: solid 1px black;
+}
+
+ol  li {color: green;}
+ol > li {color: blue;} /*matches lis in ols but not nested uls..direct child of li*/
+li.myClass {color: red;}
+li.myClass + li {color: black;} /*direct sibiling*/
+
+a[href^=http] {text-decoration: overline;} /*starts with*/
+a[href$=pdf] {font-weight: bold ;} /*ends with*/
+
+
+/*-------------------------------------*/
+/*     UI Form Related Pseudo Classes  */
+/*-------------------------------------*/
+
+input[type=checkbox]:checked + label {color: blue;}
+
+.input-pseudo-div {
+  float:left;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+input:valid {background: green;}
+input:invalid {background: red;}
+
+#test3 {
+  font-size: 2em;
+  width: 4em;
+}
+
+/*-----------------------*/
+/*Structural Selectors*/
+/*-----------------------*/
+
+.structural-selector-div {
+  margin-left: 10px;
+  width: 200px;
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+table td {
+  border:solid 1px black;
+  width:200px;
+}
+
+tr:first-child,
+tr:last-child {
+  font-weight: bold;
+}
+tr:nth-child(even){
+  background-color: green;
+}
+tr:nth-of-type(2n+3){
+  font-style: italic;
+}
+tr:nth-child(odd){
+  background-color: blue;
+  color: orange;
+}
+
+/*-----------------------*/
+/*Target*/
+/*-----------------------*/
+
+.taber {
+  width:  330px;
+  float: left;
+  clear: left;
+  border: 1px solid blue;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.block {
+  width: 300px;
+  float: left;
+  clear: left;
+  min-height: 250px;
+  position: relative;
+  margin: auto;
+  }
+
+.sections {
+  display: inline;
+}
+
+.block a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom-color: #fff;
+  margin-right: 10px;
+  margin-top: -1px;
+  position: relative;
+}
+
+div:not(:target) > .block a {
+  background-color: #ccc;
+}
+
+div:target > .block a {
+  background-color: white;
+  z-index: 2;
+}
+
+section > div {
+  background: white;
+  z-index: -2;
+  left: 0;
+  top: 30px;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+section:not(:target) > div { position: absolute }
+section:target > div { position: absolute; z-index: -1; }
+
+section:not(:target) >  a {
+  background-color: #ccc;
+}
+section:target >  a {
+  background-color: white;
+  border-bottom-color: #fff;
+}
+
+/*-----------------------*/
+/*First Letter*/
+/*-----------------------*/
+
+.first-letter {
+  width: 300px;
+  float: left;
+  min-height: 250px;
+  position: relative;
+  margin-left: 20px;
+  border: 1px solid grey;
+  margin-top: 20px;
+}
+
+.first-letter p:first-of-type:first-letter {
+  float: left;
+  font-size: 3em;
+  line-height: 1;
+  color: #880000;
+  padding: 0 4px 2px 0;
+  font-weight: bold;
+}
+
+/*-----------------------*/
+/*Canvas*/
+/*-----------------------*/
+
+.myCanvas {
+  width: 220px;
+  float: left;
+  border: 1px solid grey;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#canvasOne {
+  border: 1px solid blue;
+  position: center;
+}
