@@ -9,6 +9,10 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, '+ wScroll + '%)'
   });
 
+  if(wScroll>650){
+    $(".quote-box").text('');
+  }
+
   if(wScroll > $('.projects').offset().top - ($(window).height() / 1.2)) {
     $('.projects figure').each(function(i){
       setTimeout(function(){
@@ -17,7 +21,6 @@ $(window).scroll(function(){
     });
   }
 });
-
 
 
 $(function(){
