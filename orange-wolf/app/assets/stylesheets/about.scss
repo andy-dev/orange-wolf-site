@@ -1,14 +1,9 @@
 .about{
 
-  height: auto;
   color: white;
-  background: black;
-  background-repeat: no-repeat;
-    background: {
-      size: 900px 580px;
-      position: center;
-      attachment:fixed;
-    }
+  background: linear-gradient(#787878 , #484848);
+  /*background: #484848;*/
+
   h1 {
     text-align: center;
     }
@@ -25,6 +20,7 @@
   img {
     width: 250px;
     height: 250px;
+    margin-top: -30px;
     /*margin-left: 80px;*/
     border-radius: 150px;
    /* margin: 0 auto;*/

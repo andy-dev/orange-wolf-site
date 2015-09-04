@@ -1,11 +1,10 @@
    $(function(){
     $('#masonry-container').masonry({
       itemSelector: '.box',
-      columnWidth: 100,
+      columnWidth: 110,
       isFitWidth: true
     });
   });
-
 
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
