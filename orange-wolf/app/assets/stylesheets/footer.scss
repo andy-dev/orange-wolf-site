@@ -1,26 +1,21 @@
-.footer{
-
-  background: black;
+.footer {
+  background: linear-gradient(#323232 , black);
   color: white;
-  padding: 40px 0;
-  position: fixed;
+  padding: 10px;
   bottom: 0;
   width: 100%;
-  z-index: -1;
-
-  .footer-stuff{
-    max-width: 640px;
-    margin: 0 auto;
+  a {
+    color: #323232;
+    text-decoration: inherit;
   }
-
-  a{
-    color: white;
-  }
-
-  input {
-    color: #666;
-  }
-
 }
 
+.footer img {
+  text-decoration: none;
+  display: inline;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+}
 
