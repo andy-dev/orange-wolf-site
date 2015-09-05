@@ -6,16 +6,21 @@
     });
   });
 
-  // $(window).scroll(function(){
-  //   var wScroll = $(this).scrollTop();
+  $(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
 
-  //   $(".name-box").css({
-  //     'transform' : 'translate(0px, '+ wScroll/3  + '%)'
-  //   });
+    $(".name-box").css({
+      'transform' : 'translate(0px, '+ wScroll/3  + '%)'
+    });
 
-  //   $(".quote-box").css({
-  //     'transform' : 'translate(0px, '+ wScroll + '%)'
-  //   });
+
+    // $(".quote-box").css({
+    //   'transform' : 'translate(0px, '+ wScroll + '%)'
+    // });
+
+
+  });
+
 
   //   if(wScroll>650){
   //     $(".quote-box").text('');
