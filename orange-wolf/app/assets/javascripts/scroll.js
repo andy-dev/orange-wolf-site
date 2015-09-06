@@ -1,30 +1,45 @@
-   $(function(){
-    $('#masonry-container').masonry({
-      itemSelector: '.box',
-      columnWidth: 110,
-      isFitWidth: true
-    });
+$(function(){
+  $('#masonry-container').masonry({
+    itemSelector: '.box',
+    columnWidth: 110,
+    isFitWidth: true
   });
+
 
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
-
     $(".name-box").css({
       'transform' : 'translate(0px, '+ wScroll/3  + '%)'
     });
+  });
 
 
-    // $(".quote-box").css({
+
+    // $("#jumper").on("click", function( e ) {
+
+    //     e.preventDefault();
+
+    //     $("body, html").animate({
+    //         scrollTop: $( $(this).attr("#projects") ).offset().top
+    //     }, 800);
+
+    // });
+
+
+
+
+
+});
+
+
+ // $(".quote-box").css({
     //   'transform' : 'translate(0px, '+ wScroll + '%)'
     // });
 
 
-  });
-
-
-  //   if(wScroll>650){
-  //     $(".quote-box").text('');
-  //   }
+    // if(wScroll>650){
+    //   $(".quote-box").clear();
+    // }
 
   //   if(wScroll > $('.projects').offset().top - ($(window).height() / 1.2)) {
   //     $('.projects figure').each(function(i){
