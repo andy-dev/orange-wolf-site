@@ -1,0 +1,136 @@
+
+
+<div class="my-container">
+<h1>JS|CSS Playground</h1>
+<h5> A place where I play with CSS, HTML5, Templating and JavaScript</h5>
+  <div class="container">
+    <div id="evt-bubble-div">
+      <p>Event Bubbling</p>
+      <div onclick = "alert('we got this far')" id = "div1" class = "evt-bubble-style-divs"> DIV 1
+        <div onclick = "alert('Oh no stop')" id = "div2" class = "evt-bubble-style-divs"> DIV 2
+          <div onclick = "alert('start bubble')" id = "div3" class = "evt-bubble-style-divs"> DIV 3
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="no-bubble-div">
+      <p>Event Bubbling Stoping Propagation</p>
+      <div onclick = "alert('DIV Clicked')" class = "no-bubble-style-divs" >Div Element
+        <span onclick = "alert('Span Clicked')" class = "no-bubble-style-divs">Span Element
+          <input type = "button" value = "click ME!" onclick = "alert('button Clicked')" class = "no-bubble-style-divs" />
+        </span>
+      </div>
+    </div>
+
+    <div id ="handle-bars-render-div">
+      <p>div used to render handlebars</p>
+      <p>wait a sec to see the magic (I used a setTimeout for this)</p>
+    </div>
+
+    <div id ="selector-play-div">
+      <p>Different Selectors at Work</p>
+      <ol>
+        <li> one
+        <li> two
+          <ul>
+            <li> dog </li>
+            <li> cat </li>
+            <li> lion </li>
+          </ul>
+        <li class="myClass"> wolf
+        <li> orca
+        <li> <a href="http://standarista.com">CSS Cool Blog</a>
+        <li> <a href="local.pdf">not external link for example pdf</a>
+      </ol>
+      <input type="checkbox" id="checker">
+      <label for "checker">check me I turn blue</label>
+    </div>
+
+    <div class="input-pseudo-div">
+      <p>Input Number with max and min, clever HTML5 eh?</p>
+      <input type="number" min="4" max="8" id="test3">
+      <label for="test3">Number between 4 and 8</label>
+    </div>
+
+    <div class="structural-selector-div">
+      <p>Structural Selectors</p>
+      <table>
+        <tr>
+          <td>Row one</td>
+        </tr>
+        <tr>
+          <td>Row two</td>
+        </tr>
+        <tr>
+          <td>Row three</td>
+        </tr>
+        <tr>
+          <td>Row four</td>
+        </tr>
+        <tr>
+          <td>Row five</td>
+        </tr>
+        <tr>
+          <td>Row six</td>
+        </tr>
+        <tr>
+          <td>Row seven</td>
+        </tr>
+        <tr>
+          <td>Row eight</td>
+        </tr>
+        <tr>
+          <td>Row nine</td>
+        </tr>
+        <tr>
+          <td>Row ten</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="taber">
+      <p>This is an example of Target, no need for JS, how you like them apples?</p>
+      <div class="block">
+        <section id="tab1" class="sections">
+          <a href = "#tab1"> Tab 1 </a>
+          <div>
+            Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.
+          </div>
+        </section>
+        <section id="tab2" class="sections">
+          <a href = "#tab2"> Tab 2 </a>
+          <div>
+            It is during our darkest moments that we must focus to see the light.
+          </div>
+        </section>
+        <section id="tab3" class="sections">
+          <a href = "#tab3"> Tab 3 </a>
+          <div>
+            Put your heart, mind, and soul into even your smallest acts. This is the secret of success.
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="first-letter">
+      <em>First Letter...lets style it...make it feel special LOL</em>
+      <p>The only thing a golfer needs is more daylight.</p>
+      <p>As you walk down the fairway of life you must smell the roses, for you only get to play one round.</p>
+    </div>
+
+    <div class="myCanvas">
+      <p>Canvas Oleo Oleo le</p>
+      <canvas width="200" height="200" id="canvasOne"></canvas>
+    </div>
+
+    <script id="new_template" type="text/x-handlebars-template">
+      <div>
+      <p>Handle Bars Example</p>
+        <h1>{{title}}</h1>
+        <h2>{{body}}</h2>
+      </div>
+    </script>
+
+  </div>
+</div>

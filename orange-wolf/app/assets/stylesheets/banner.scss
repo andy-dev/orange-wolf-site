@@ -1,0 +1,56 @@
+.matrix-box {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: black;
+  background-repeat: no-repeat;
+
+  background: {
+   image: url(/matrix_background.png);
+   size: 900px 580px;
+   /*another option is:*/
+   /*size: 100% 100%;*/
+   position: center;
+   attachment:fixed;
+  }
+}
+
+.name-box {
+  height: 150px;
+  width: 100%;
+  background: transparentize(black, 0.2);
+  position: absolute;
+  top: 50%;
+  margin-top: -110px;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+  }
+}
+
+.quote-box {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -610px;
+
+  h3 {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: -5px;
+  }
+}
+
+.big {
+  height: 2000px;
+}

@@ -1,0 +1,31 @@
+.about{
+
+  color: white;
+  background: linear-gradient(#787878 , #484848);
+  padding:10px;
+
+  h1 {
+    text-align: center;
+    }
+
+  p {
+    text-indent: 15px;
+    font-size:18px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    /*margin-left: 80px;*/
+    border-radius: 150px;
+   /* margin: 0 auto;*/
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+  }
+}
+
+
