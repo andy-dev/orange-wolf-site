@@ -5,6 +5,7 @@ $(function(){
   showEverywhere("I love JS!!");
   console.log(player.weapons);
   mybouncingSquare();
+  eventProp();
 })
 //-------------------
 // event bubbling
@@ -26,7 +27,9 @@ var eventProp = function (){
         evt.cancelBubble = true // else use this one
       }
       this.style.borderColor = "red";
-      alert(this.getAttribute("id") + " border color changed")
+      // alert(this.getAttribute("id") + " border color changed")
+      alert( " border color changed")
+
     }
   }
 };
