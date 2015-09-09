@@ -12,6 +12,7 @@ $(function(){
       'transform' : 'translate(0px, '+ wScroll/3  + '%)'
     });
   });
+});
 
 
 
@@ -29,7 +30,7 @@ $(function(){
 
 
 
-});
+
 
 
  // $(".quote-box").css({
