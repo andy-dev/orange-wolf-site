@@ -151,14 +151,37 @@
   width: 40px;
   border-radius: 30px;
 }
-/* line 6, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+/* line 5, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar-brand {
+  font-size: 14px;
+}
+
+/* line 9, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .navbar-brand {
+  color: white;
+  word-spacing: 2px;
+}
+
+/* line 14, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .navbar-brand:hover {
+  color: grey;
+}
+
+/* line 18, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
 .navbar-nav > li {
   margin-left: 20px;
 }
 
-/* line 10, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
-.navbar-brand {
-  font-size: 14px;
+/* line 22, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .nav > li > a {
+  text-decoration: none;
+  color: white;
+  word-spacing: 2px;
+}
+
+/* line 28, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .nav > li > a:hover {
+  color: grey;
 }
 
 /*body {
@@ -8716,14 +8739,37 @@ button.close {
   border-radius: 30px;
 }
 
-/* line 6, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+/* line 5, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar-brand {
+  font-size: 14px;
+}
+
+/* line 9, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .navbar-brand {
+  color: white;
+  word-spacing: 2px;
+}
+
+/* line 14, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .navbar-brand:hover {
+  color: grey;
+}
+
+/* line 18, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
 .navbar-nav > li {
   margin-left: 20px;
 }
 
-/* line 10, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
-.navbar-brand {
-  font-size: 14px;
+/* line 22, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .nav > li > a {
+  text-decoration: none;
+  color: white;
+  word-spacing: 2px;
+}
+
+/* line 28, /Users/macedo/Desktop/apps/orange-wolf-site/orange-wolf/app/assets/stylesheets/nav.scss */
+.navbar .nav > li > a:hover {
+  color: grey;
 }
 
 /*body {
