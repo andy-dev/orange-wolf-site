@@ -2,14 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.navbar-brand {
+  font-size: 14px;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  word-spacing: 2px;
+}
+
+.navbar .navbar-brand:hover {
+  color: grey;
+}
 
 .navbar-nav > li{
   margin-left:20px;
 }
 
-.navbar-brand {
-  font-size: 14px;
+.navbar .nav > li > a {
+    text-decoration: none;
+    color:  white;
+    word-spacing: 2px;
 }
+
+.navbar .nav > li > a:hover {
+    color:  grey;
+}
+
 
 /*body {
     font-family: "Myriad", Helvetica, Arial, sans-serif;
