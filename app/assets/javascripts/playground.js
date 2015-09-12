@@ -217,5 +217,34 @@ var mybouncingSquare = function() {
 // });
 
 
+var AjaxWrapper = (function() {
+  var request = function(){
+    var url = "http://www.reddit.com/r/fiddlercrabs.json";
+    var xhr = new XMLHttpRequest();
+    xhr.open("get",url,true);
 
+    var myPromise = new Promise(function(resolve,reject){
+      xhr.onload = function (e) {
+        if (xhr.readyState === xhr.DONE) {
+          if (xhr.status === 200) {
+            resolve(xhr.responseText)
+          } else {
+            console.error(xhr.statusText);
+          }
+        }
+      };
+      xhr.onerror = function (e) {
+        reject(xhr.statusText);
+      };
+      xhr.send();
+    });
 
+    myPromise.then(function(value){
+      console.log(value);
+      console.log("success!!!!")
+    });
+  };
+  return {
+    request:request,
+  };
+})();
