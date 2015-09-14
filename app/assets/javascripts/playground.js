@@ -248,3 +248,47 @@ var AjaxWrapper = (function() {
     request:request,
   };
 })();
+
+
+var Dom = (function (){
+
+  var select = sweetSelector.select;
+
+  var hide = function (stringElemSelector){
+    var divToHide = select(stringElemSelector);
+    for (let i = 0; i < divToHide.length; i++){
+      divToHide[i].style.display = "none";
+    }
+  };
+
+  var show = function (stringElemSelector){
+    var divToShow = select(stringElemSelector);
+    for (let i = 0; i < divToShow.length; i++){
+      divToShow[i].style.display = "block";
+    }
+  };
+
+  var addClass = function (stringElemSelector, newClassName){
+    var elementsToAddClass = select(stringElemSelector);
+    for (let i = 0; i < elementsToAddClass.length; i++){
+      if(elementsToAddClass[i]) {
+        elementsToAddClass[i].className += elementsToAddClass[i].className ? " " + newClassName : newClassName;
+      }
+    }
+  };
+
+  var removeClass = function (stringElemSelector, classNameToRemove){
+    var elementsToRemoveClass = select(stringElemSelector);
+    for (let i = 0; i < elementsToRemoveClass.length; i++){
+      elementsToRemoveClass[i].classList.remove(classNameToRemove);
+    }
+  };
+
+  return {
+    hide:hide,
+    show:show,
+    addClass:addClass,
+    removeClass:removeClass
+  };
+
+})();
