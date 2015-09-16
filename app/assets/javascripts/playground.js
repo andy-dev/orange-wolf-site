@@ -130,7 +130,6 @@ player.addWeapon("samurai sword")
 //  Canvas
 //---------------------------
 var mybouncingSquare = function() {
-
   // initial position
   var x = 10;
   var y = 10;
@@ -171,8 +170,8 @@ var mybouncingSquare = function() {
       speedY = -speedY;
     }
 
-    y = y + speedY;
-    x = x + speed;
+    y += speedY;
+    x += speed;
 
     blueZone = x > 0 && x < 65;
     orangeZone = !blueZone && x < 130;
