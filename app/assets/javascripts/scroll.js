@@ -16,23 +16,6 @@ $(function(){
 
 
 
-    // $("#jumper").on("click", function( e ) {
-
-    //     e.preventDefault();
-
-    //     $("body, html").animate({
-    //         scrollTop: $( $(this).attr("#projects") ).offset().top
-    //     }, 800);
-
-    // });
-
-
-
-
-
-
-
-
  // $(".quote-box").css({
     //   'transform' : 'translate(0px, '+ wScroll + '%)'
     // });
