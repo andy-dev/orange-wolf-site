@@ -290,3 +290,18 @@ var Dom = (function (){
   };
 
 })();
+
+// notes on iife
+
+// (function(global){
+
+//   //private
+
+//   //public
+//   global.foo = foo;
+//   global.bar = bar;
+
+// })(window);
+
+//notes on doc ready
+// ajax calls do not need to be on doc ready dont use it unless you need it
