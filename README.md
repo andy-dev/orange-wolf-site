@@ -1,5 +1,7 @@
 #README
 
-This rails app will become my portfolio site with a possible merge of my css ruby js playgrounds
+My personal website and portfolio,
 
- 
+JS | CSS playground is a place where I play with CSS and JS, check out the source code and the page.
+
+
