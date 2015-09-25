@@ -299,9 +299,9 @@ var Dom = (function (){
 
 //   //public
 //   global.foo = foo;
-//   global.bar = bar;
+//   global.bar = bar; // this will make bar global
 
 // })(window);
 
-//notes on doc ready
+// notes on doc ready
 // ajax calls do not need to be on doc ready dont use it unless you need it
