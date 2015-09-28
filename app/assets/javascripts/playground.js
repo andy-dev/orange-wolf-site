@@ -307,7 +307,9 @@ var Dom = (function (){
 // ajax calls do not need to be on doc ready dont use it unless you need it
 
 
-//bubble sort
+//---------------------------
+//  Bubble Sort
+//---------------------------
 var mySorting = function bubbleSort(array){
   var arrayLength = array.length;
   var i = 0;
@@ -329,11 +331,13 @@ var myArray = [1,3,5,2,4,3,6,8,10,9,7]
 console.log(mySorting(myArray))
 
 
-//pivot sort
+//---------------------------
+//  Pivot Sort
+//---------------------------
 var myQuick = function pivot(arr){
   if (arr.length <= 1) {
     return array;
-  }
+  };
 
   var leftSide = [];
   var rightSide = [];
@@ -347,9 +351,8 @@ var myQuick = function pivot(arr){
     }
   }
 
-  return myQuick(leftSide).concat(pivot, myQuick(rightSide))
-
+  return myQuick(leftSide).concat(pivot, myQuick(rightSide));
 }
 
-myArray = [6,5,4,3,2,1]
-console.log(myQuick(myArray))
+myArray = [6,5,4,3,2,1];
+console.log(myQuick(myArray));
