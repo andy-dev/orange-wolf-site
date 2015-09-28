@@ -327,3 +327,29 @@ var mySorting = function bubbleSort(array){
 
 var myArray = [1,3,5,2,4,3,6,8,10,9,7]
 console.log(mySorting(myArray))
+
+
+//pivot sort
+var myQuick = function pivot(arr){
+  if (arr.length <= 1) {
+    return array;
+  }
+
+  var leftSide = [];
+  var rightSide = [];
+  var pivot = arr[0];
+
+  for(i=0; i< arr.length; i++){
+    if(array[i] < pivot){
+      leftSide.push(arr[i])
+    } else {
+      rightSide.push(arr[i])
+    }
+  }
+
+  return myQuick(leftSide).concat(pivot, myQuick(rightSide))
+
+}
+
+myArray = [6,5,4,3,2,1]
+console.log(myQuick(myArray))
